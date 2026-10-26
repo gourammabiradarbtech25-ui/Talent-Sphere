@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TalentSphere - Admin Dashboard</title>
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header id="top">
+        <h1>TALENTSPHERE</h1>
+        <p>Admin Dashboard - Participant Management</p>
+        <nav>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#participants">All Participants</a>
+            <a href="#dancing">Dancing</a>
+            <a href="#singing">Singing</a>
+            <a href="#art">Art and Creativity</a>
+            <a href="#coding">Coding and Technology</a>
+            <a href="#acting">Acting and Storytelling</a>
+            <a href="#other">Other Talents</a>
+            <a href="index.html">Main Website</a>
+        </nav>
+    </header>
+    <section id="dashboard">
+        <h2>Dashboard Overview</h2>
+        <p>View registered participants according to their selected talent.</p>
+        <div class="category-container">
+            <article class="category-card">
+                <h3>Total Participants</h3>
+                <p id="total-count">0</p>
+            </article>
+            <article class="category-card">
+                <h3>Dancing</h3>
+                <p id="dancing-count">0</p>
+            </article>
+            <article class="category-card">
+                <h3>Singing</h3>
+                <p id="singing-count">0</p>
+            </article>
+            <article class="category-card">
+                <h3>Art and Creativity</h3>
+                <p id="art-count">0</p>
+            </article>
+            <article class="category-card">
+                <h3>Coding and Technology</h3>
+                <p id="coding-count">0</p>
+            </article>
+            <article class="category-card">
+                <h3>Acting and Storytelling</h3>
+                <p id="acting-count">0</p>
+            </article>
+            <article class="category-card">
+                <h3>Other Talents</h3>
+                <p id="other-count">0</p>
+            </article>
+        </div>
+    </section>
+    <section id="participants">
+        <h2>All Registered Participants</h2>
+        <p>Search for participants by name, email, college, or talent.</p>
+        <label for="participant-search">Search Participants:</label>
+        <input
+            type="search"
+            id="participant-search"
+            placeholder="Enter name, email, college, or talent"
+        >
+        <button type="button" id="refresh-button">
+            Refresh Participants
+        </button>
+        <p id="status-message" role="status">
+            Registration data has not been connected yet.
+        </p>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact Number</th>
+                        <th>College</th>
+                        <th>Selected Talent</th>
+                    </tr>
+                </thead>
+                <tbody id="all-participants-body">
+                    <tr>
+                        <td colspan="5">
+                            Connect the dashboard to your registration data
+                            to display participants.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="dancing">
+        <h2>💃 Dancing Participants</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact Number</th>
+                        <th>College</th>
+                        <th>Selected Talent</th>
+                    </tr>
+                </thead>
+                <tbody id="dancing-body"></tbody>
+            </table>
+        </div>
+    </section>
+    <section id="singing">
+        <h2>🎤 Singing Participants</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact Number</th>
+                        <th>College</th>
+                        <th>Selected Talent</th>
+                    </tr>
+                </thead>
+                <tbody id="singing-body"></tbody>
+            </table>
+        </div>
+    </section>
+    <section id="art">
+        <h2>🎨 Art and Creativity Participants</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact Number</th>
+                        <th>College</th>
+                        <th>Selected Talent</th>
+                    </tr>
+                </thead>
+                <tbody id="art-body"></tbody>
+            </table>
+        </div>
+    </section>
+    <section id="coding">
+        <h2>💻 Coding and Technology Participants</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact Number</th>
+                        <th>College</th>
+                        <th>Selected Talent</th>
+                    </tr>
+                </thead>
+                <tbody id="coding-body"></tbody>
+            </table>
+        </div>
+    </section>
+    <section id="acting">
+        <h2>🎭 Acting and Storytelling Participants</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact Number</th>
+                        <th>College</th>
+                        <th>Selected Talent</th>
+                    </tr>
+                </thead>
+                <tbody id="acting-body"></tbody>
+            </table>
+        </div>
+    </section>
+    <section id="other">
+        <h2>🌟 Other Talent Participants</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact Number</th>
+                        <th>College</th>
+                        <th>Selected Talent</th>
+                    </tr>
+                </thead>
+                <tbody id="other-body"></tbody>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <p>
+            &copy; 2026 TalentSphere.
+            Admin Participant Management Dashboard.
+        </p>
+        <a href="#top">Back to Top ↑</a>
+    </footer>
+    <script src="admin.js"></script>
+</body>
+</html>
